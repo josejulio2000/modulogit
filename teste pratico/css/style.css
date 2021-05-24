@@ -1,0 +1,614 @@
+/*reset css, estilo de fontes e grid*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+
+@font-face {
+  font-family: "Oswald", sans-serif;
+  src: url(../fonts_front/Oswald-Regular_0.ttf);
+}
+@font-face {
+  font-family: "PT Serif", serif;
+  src: url(../fonts_front/PTF55F.ttf);
+}
+.estiloOnlineLogo {
+  color: #99c9e6;
+  font-size: 17px;
+}
+.tituloPadrao22 {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  color: #314163;
+}
+.grid {
+  display: grid;
+  margin: 0 15px;
+  grid-template-columns: repeat(12, 73px);
+  grid-gap: 24px;
+  max-width: 1180px;
+  margin-left: 200px;
+  grid-template-areas:
+    "header header header header header header header header header header header header"
+    ". section section section section section aside aside aside aside aside aside"
+    ". main  main  main  main  main aside aside aside aside aside aside"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+/* fim do reset css, estilo de fontes e grid*/
+
+/*inicio header*/
+.section h3{
+  margin-left: -25px;
+}
+.header {
+  grid-area: header;
+  background: #0079c1;
+  padding: 10px;
+  font-family: "Oswald", sans-serif;
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+}
+.header h1 span {
+  color: #80bce0;
+}
+.header h1 {
+  margin-top: 10px;
+  font-family: "Oswald", sans-serif;
+  margin-left: 200px;
+  color: #ffffff;
+  font-size: 20px;
+}
+ /*estilizando o menu*/
+.header nav {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+.header nav ul {
+  display: flex;
+}
+.header nav ul li {
+  margin-left: 20px;
+}
+.header nav ul li a {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+}
+/*fim  header*/
+/*inicio section*/
+.section {
+  grid-area: section;
+}
+.section h3 {
+  font-family: "Oswald", sans-serif;
+  color: #314163;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.section h1 {
+  font-family: "Oswald", sans-serif;
+  color: #314163;
+  font-size: 50px;
+}
+.section h2 {
+  font-family: "Oswald", sans-serif;
+  color: #314163;
+  font-size: 24px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.section h4 {
+  margin-bottom: 10px;
+}
+.section p {
+  font-family: "PT Serif", serif;
+  color: #314163;
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+.aside {
+  position: relative;
+  grid-area: aside;
+  margin-top: 450px;
+  background-color: #314163;
+  width: 290px;
+  top: -350px;
+  left: 130px;
+}
+.aside img {
+  width: 390px;
+  height: 390px;
+  position: absolute;
+  top: 340px;
+  left: -100px;
+}
+
+.aside img {
+  width: 390px;
+  height: 390px;
+}
+
+/*fim section*/
+
+/*inicio main*/
+.main {
+  background-color: #e8f8ff;
+  grid-area: main;
+  width: 457px;
+  height: 712px;
+  padding: 10px;
+}
+
+.main form {
+  border: 1px solid #314163;
+}
+
+.main form h2 {
+  font-family: "PT Serif", serif;
+  color: #314163;
+  font-size: 26px;
+  margin: 20px 20px;
+}
+.main form h3 {
+  margin: 45px 0px 0px 10px;
+}
+.label {
+  margin-left: 137px;
+}
+.espaçoLateral {
+  margin-left: 10px;
+}
+.main form input[type="text"],
+.main form input[type="email"] {
+  width: 91%;
+  margin: 10px 0px;
+  margin-left: 10px;
+  background: #e8f8ff;
+  border: 1px solid #314163;;
+}
+.tamanhop {
+  width: 173px !important;
+  height: 33px !important;
+  padding: 0px;
+}
+.tamanhom {
+  width: 210px !important;
+  height: 33px !important;
+  margin-left: 14px;
+}
+.ladoalado {
+  display: flex;
+}
+.ladoalado p {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  color: #4a85af;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+.btn {
+  width: 165px;
+  height: 40px;
+  color: #ffffff;
+  background: #4a85af;
+  border: 0px;
+  margin-top: 12px;
+  margin-bottom: 42px;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+input[type="file"],
+input[type="submit"] {
+  display: none;
+}
+
+.btn2 {
+  position: absolute;
+  display: block;
+  width: 165px;
+  height: 30px;
+  color: #ffffff;
+  background: #314163;
+  padding: 5px;
+  margin: 45px 0px 0px 225px;
+  text-align: center;
+  cursor: pointer;
+}
+/*fim main*/
+
+/*inicio footer*/
+.footer {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  margin-top: 40px;
+  background: #0079c1;
+}
+.footer h1 {
+  margin-top: 10px;
+  font-family: "Oswald", sans-serif;
+  margin-left: 200px;
+  color: #ffffff;
+  font-size: 20px;
+}
+.footer h2 {
+  font-size: 11px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.footer .estilo-online {
+  color: #99c9e6;
+  font-size: 17px;
+}
+/* fim footer*/
+
+/*media query*/
+@media (min-width:400px) and (max-width:499px){
+  .grid {
+    display: grid;
+    margin: 0px;
+    grid-template-columns: repeat(2,73px);
+    grid-gap: 0px;
+    max-width: 559px;
+    margin-left: 0px;
+    grid-template-areas:
+      "header header"
+      "section section"
+      "aside aside"
+      "main main"
+      "footer footer";
+  }
+  
+    .section h3{
+    margin-left: 0px;
+  }
+  .header {
+    margin-left: 0px;
+    padding: 10px;
+    grid-template-columns: 1fr ;
+  }
+  .header h1 {
+    margin: 10px auto;
+    font-size: 20px;
+  }
+   /*estilizando o menu*/
+   .header nav {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .header nav ul {
+    display: flex;
+  }
+  .header nav ul li {
+    margin-left: 2px;
+  }
+  .header nav ul li a {
+    font-size: 10px;
+  }
+  /*fim  header*/
+  /*inicio section*/
+  .section h3 {
+    margin: 40px 0px 40px 10px;
+  }
+  .section h1 {
+    margin-left: 35px;
+    font-size: 25px;
+  }
+  .section h2 {
+    font-size: 20px;
+    margin: 20px 35px;
+    width: 400px;
+  }
+  .section h4 {
+    width: 200px;
+    margin: 0px 35px;
+    margin-bottom: 10px;
+    
+  }
+  .section p {
+    width: 400px;
+    font-size: 28px;
+    margin: 20px 35px;
+  }
+  .aside {
+    top: -800px;
+  }
+  .btn2 {
+    display: inline-block;
+    margin: 40px 0px 0px 230px;
+    
+  }
+  .footer {
+    grid-template-columns: 2fr 1fr;
+  }
+  .footer h1 {
+    margin:10px 0px 0px 20px;
+    font-size: 20px;
+  }
+  .footer h2 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .footer .estilo-online {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 629px) {
+  .grid {
+    display: grid;
+    margin: 0 15px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px;
+    max-width: 1180px;
+    margin-left: 10px;
+    grid-template-areas:
+      "header "
+      "section"
+      "aside"
+      "main"
+      "footer";
+  }
+  .header {
+    grid-template-columns: 1fr;
+  }
+  .header h1 {
+    margin-left: 10px auto;
+  }
+  .header nav {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .header nav ul li {
+    margin-left: 8px;
+  }
+  .header nav ul li a {
+    font-size: 11px;
+  }
+  .aside {
+    position: relative;
+    margin: 0px 0px;
+    background-color: #314163;
+    width: 0px;
+    top: 0px;
+    left: 0px;
+  }
+  .aside img {
+    width: 390px;
+    height: 390px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-left: 30px;
+  }
+  .main {
+    margin: 400px auto 0px auto;
+  }
+  .btn2{
+    margin: 40px 0px 0px 240px;
+  }
+  .section {
+    margin: 0 auto;
+  }
+  .section h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .section h1 {
+    font-size: 35px;
+  }
+  .section h2 {
+    font-size: 15px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .section h4 {
+    margin-bottom: 10px;
+  }
+  .section p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    display: flex;
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+  }
+  .footer h1 {
+    margin-top: 10px;
+    margin: 10px auto;
+  }
+  .footer h2 {
+    margin: 10px auto;
+  }
+}
+@media (min-width: 630px) and (max-width: 759px) {
+  .grid {
+    display: grid;
+    margin: 0 15px;
+    max-width: 1180px;
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+    max-width: 1180px;
+    margin-left: 0px;
+    grid-template-areas:
+      "header"
+      "section"
+      "aside"
+      " main"
+      "footerr";
+  }
+
+  .header {
+    grid-template-columns: 1fr 3fr;
+  }
+  .header h1 {
+    margin-left: 5px;
+  }
+  .header nav {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .header nav ul li {
+    margin-left: 5px;
+  }
+  .header nav ul li a {
+    font-size: 11px;
+  }
+  .section {
+    margin: 10px 95px;
+  }
+  .section h3 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .section h1 {
+    font-size: 35px;
+  }
+  .section h2 {
+    font-size: 15px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .section h4 {
+    margin-bottom: 10px;
+  }
+  .section p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .aside {
+    position: relative;
+    margin: 10px 80px;
+    background-color: #314163;
+    width: 0px;
+    top: 0px;
+    left: 0px;
+  }
+  .aside img {
+    width: 390px;
+    height: 390px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .main {
+    margin: 400px auto 0px auto;
+  }
+  .footer {
+    grid-template-columns: 2fr 1fr;
+    margin-top: 50px;
+  }
+  .footer h1 {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .footer h2 {
+    font-size: 11px;
+    margin-top: 10 60px;
+  }
+  .footer .estilo-online {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1123px) and (max-width: 1218px) {
+  .header {
+    grid-template-columns: 4fr 7fr;
+  }
+  .header nav ul {
+    display: flex;
+  }
+  .header nav ul li {
+    margin-left: 7px;
+  }
+  
+  
+}
+
+@media (min-width: 760px) and (max-width: 1122px) {
+  .header {
+    grid-template-columns: 1fr 2fr;
+  }
+  .header h1 {
+    margin-left: 10px;
+  }
+  .header nav {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .header nav ul li {
+    margin-left: 10px;
+  }
+  .header nav ul li a {
+    font-size: 11px;
+  }
+  .grid {
+    display: grid;
+    margin: 0 15px;
+    max-width: 1180px;
+    grid-template-columns: repeat(12, 73px);
+    grid-gap: 24px;
+    max-width: 1180px;
+    margin-left: 10px;
+  }
+  .section h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .section h1 {
+    font-size: 35px;
+  }
+  .section h2 {
+    font-size: 15px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .section h4 {
+    margin-bottom: 10px;
+  }
+  .section p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .aside {
+    width: 290px;
+    top: -350px;
+    left: 20px;
+  }
+  .aside img {
+    width: 390px;
+    height: 390px;
+    position: absolute;
+    top: 180px;
+    left: -200px;
+  }
+  .footer {
+    grid-template-columns: 2fr 1fr;
+    margin-top: 100px;
+  }
+  .footer h1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .footer h2 {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+  .footer .estilo-online {
+    font-size: 17px;
+  }
+}
+/* fim da media query
+*/
